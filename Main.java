@@ -1,13 +1,11 @@
+
 public class Main {
 
     public static void main(String[] args) {
         int numRows = 4;
         int numCols = 4;
 
-        float[][] matrix = new float[numRows][numCols];
-
-        MatrixGenerator generator = new MatrixGenerator(matrix);
-        generator.run();
+        float[][] matrix = MatrixGenerator.generate(numRows, numCols);
 
         // Print out the generated matrix
         for (int i = 0; i < numRows; i++) {
